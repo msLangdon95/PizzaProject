@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!-- Website template by freewebsitetemplates.com -->
-<html>
+<html ng-app="">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <head>
 	<meta charset="UTF-8">
 	<title>Everyday Menu - Liberteri Italiano Web Template</title>
@@ -8,20 +9,6 @@
 	<!--[if IE 6]>
 		<link rel="stylesheet" type="text/css" href="css/ie6.css">
 	<![endif]-->
-	<style>
-	 #circle{
-	 position:absolute;
-	 top:120px;
-      width: 250px;
-      height: 250px;
-      -webkit-border-radius: 125px;
-      -moz-border-radius: 125px;
-      border-radius: 125px;
-      background: BlanchedAlmond ;
-	  position: relative;
-	  left: 100px;
-    }
-	</style>
 </head>
 <body>
 	<div id="header">
@@ -39,202 +26,28 @@
 			</ul>
 		</div>
 	</div>
-	<div id="content">
-		<div>
-			<div class="section">
-				<span><a href="index.html"><img src="images/pizza.jpg" alt="Image"></a></span>
-				<div>
-					<h2>Pizza</h2>
-					<ul>
-						<li class="first">
-							<table>
-								<tr>
-									<td>Salami and Cheese</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Ripacotta</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Terracotta on wheat</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Ham and cheese</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Burroli</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>La Pieta</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Cheverkybebab</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Pastrami and Rye</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Delicateseen</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Michael&#39;s Special</td>
-									<td><span>$24.50</span></td>
-								</tr>
-							</table>
-						</li>
-						<li>
-							<table>
-								<tr>
-									<td>Salami and Cheese</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Ripacotta</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Terracotta on wheat</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Ham and cheese</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Burroli</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>La Pieta</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Cheverkybebab</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Pastrami and Rye</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Delicateseen</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Michael&#39;s Special</td>
-									<td><span>$24.50</span></td>
-								</tr>
-							</table>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="section">
-				<span><a href="index.html"><img src="images/pasta.jpg" alt="Image"></a></span>
-				<div>
-					<h2>Pasta</h2>
-					<ul>
-						<li class="first">
-							<table>
-								<tr>
-									<td>Salami and Cheese</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Ripacotta</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Terracotta on wheat</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Ham and cheese</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Burroli</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>La Pieta</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Cheverkybebab</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Pastrami and Rye</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Delicateseen</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Michael&#39;s Special</td>
-									<td><span>$24.50</span></td>
-								</tr>
-							</table>
-						</li>
-						<li>
-							<table>
-								<tr>
-									<td>Salami and Cheese</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Ripacotta</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Terracotta on wheat</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Ham and cheese</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Burroli</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>La Pieta</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Cheverkybebab</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Pastrami and Rye</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Delicateseen</td>
-									<td><span>$24.50</span></td>
-								</tr>
-								<tr>
-									<td>Michael&#39;s Special</td>
-									<td><span>$24.50</span></td>
-								</tr>
-							</table>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
+	
+	<div id="myTry">
+		<ul>
+			<li ng-mouseover="count = count + 1" ng-init="count=0">
+				<a href="">Meat</a>
+				<ul class="subMenu">
+					<li>Opt1</li>
+					<li>Opt2</li>
+					<li>Opt3</li>
+				</ul>
+			</li>
+			<li>
+				<a href="">Veggies</a>
+			</li>
+			<li><a href="">Sauce</a></li>
+			<li><a href="">Sea Food</a></li>
+			<li><a href="">Cheese</a></li>
+		</ul>
 	</div>
+	<div id="circle"></div>
+
+	
 	<div id="footer">
 		<div>
 			<ul>

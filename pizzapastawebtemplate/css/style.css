@@ -1,5 +1,40 @@
 /* Website template by freewebsitetemplates.com */
 
+#myTry{
+	float:left;
+	margin: 50px 100px 200px 350px;
+	padding: 55px 0 0;
+	float: left;
+	font-size: 20px;
+	list-style: none;
+	line-height: 56px; 
+}
+#myTry ul li a{
+	color: #585858;
+	display: block;
+	padding: 0 60px;
+	text-shadow: 1px 1px 0 #e3e3e3;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+#circle {
+      width: 400px;
+      height: 400px;
+      -webkit-border-radius: 200px;
+      -moz-border-radius: 200px;
+      border-radius:200px;
+      background: BlanchedAlmond ;
+	  margin: 100px 200px 100px 700px;
+	  /*margin: auto;*/
+}
+
+.subMenu {
+  position: absolute;
+  display: none;
+  background-color: lightgreen;
+  padding: 5px;
+}
+
 body {
 	background: url(../images/bg-body.gif) repeat top center;
 	color: #34441f;
@@ -10,6 +45,11 @@ body {
 	padding: 0;
 	
 }
+ul
+{
+    list-style-type: none;
+}
+
 
 a {
 	outline: none;
