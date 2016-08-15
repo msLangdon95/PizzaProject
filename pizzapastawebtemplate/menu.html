@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <!-- Website template by freewebsitetemplates.com -->
-<html ng-app="">
+<html>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 <head>
 	<meta charset="UTF-8">
 	<title>Everyday Menu - Liberteri Italiano Web Template</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<!--[if IE 6]>
-		<link rel="stylesheet" type="text/css" href="css/ie6.css">
-	<![endif]-->
 </head>
 <body>
 	<div id="header">
@@ -28,10 +25,11 @@
 	</div>
 	
 	<div id="myTry">
-		<ul>
-			<li ng-mouseover="count = count + 1" ng-init="count=0">
+		<ul ng-app="myApp" ng-controller="myCtrl">
+		{{myVar}}
+			<li>
 				<a href="">Meat</a>
-				<ul class="subMenu">
+				<ul ng-hide={{myVar}} ng-mouseover="myVar=0" ng-mouseleave="hoverOut()"> 
 					<li>Opt1</li>
 					<li>Opt2</li>
 					<li>Opt3</li>
@@ -46,8 +44,6 @@
 		</ul>
 	</div>
 	<div id="circle"></div>
-
-	
 	<div id="footer">
 		<div>
 			<ul>
@@ -89,5 +85,17 @@
 			</div>
 		</div>
 	</div>
+	<script>
+	var app = angular.module('myApp', []);
+	app.controller('myCtrl', function($scope){
+		$scope.myVar=1;
+		$scope.hoverIn = function(){
+			return $scope.myVar=0;
+		};
+		$scope.hoverOut = function(){
+			return $scope.myVar=1;
+		};
+	});
+	</script>
 </body>
 </html>

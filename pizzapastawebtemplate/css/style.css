@@ -10,7 +10,7 @@
 	line-height: 56px; 
 }
 #myTry ul li a{
-	color: #585858;
+	color: black;
 	display: block;
 	padding: 0 60px;
 	text-shadow: 1px 1px 0 #e3e3e3;
@@ -25,14 +25,6 @@
       border-radius:200px;
       background: BlanchedAlmond ;
 	  margin: 100px 200px 100px 700px;
-	  /*margin: auto;*/
-}
-
-.subMenu {
-  position: absolute;
-  display: none;
-  background-color: lightgreen;
-  padding: 5px;
 }
 
 body {
