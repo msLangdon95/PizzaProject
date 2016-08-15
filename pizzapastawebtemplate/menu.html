@@ -26,10 +26,9 @@
 	
 	<div id="myTry">
 		<ul ng-app="myApp" ng-controller="myCtrl">
-		{{myVar}}
 			<li>
-				<a href="">Meat</a>
-				<ul ng-hide={{myVar}} ng-mouseover="myVar=0" ng-mouseleave="hoverOut()"> 
+				<a href="" ng-mouseenter="hoverIn()" ng-mouseleave="hoverOut()">Meat</a>
+				<ul ng-hide={{myVar}}> 
 					<li>Opt1</li>
 					<li>Opt2</li>
 					<li>Opt3</li>
@@ -41,6 +40,7 @@
 			<li><a href="">Sauce</a></li>
 			<li><a href="">Sea Food</a></li>
 			<li><a href="">Cheese</a></li>
+			{{myVar}}
 		</ul>
 	</div>
 	<div id="circle"></div>
