@@ -23,26 +23,33 @@
 			</ul>
 		</div>
 	</div>
-	
+	<!--HERE BEGINS THE ANGULARJS PART-->
+	<!--dropdown list with icons-->
 	<div id="myTry">
 		<ul ng-app="myApp" ng-controller="myCtrl">
-			<li>
-				<a href="" ng-mouseenter="hoverIn()" ng-mouseleave="hoverOut()">Meat</a>
-				<ul ng-hide={{myVar}}>
-					<li>Opt1</li>
-					<li>Opt2</li>
-					<li>Opt3</li>
-				</ul>
-			</li>
-			<li>
-				<a href="">Veggies</a>
-			</li>
-			<li><a href="">Sauce</a></li>
-			<li><a href="">Sea Food</a></li>
-			<li><a href="">Cheese</a></li>
-			{{myVar}}
+		<li>
+			<select ng-model="selectedSize" ng-options="x for x in names">
+			</select>
+		</li>
+		<li>
+			<select ng-model="selectedSauce" ng-options="x for x in sauce">
+			</select>
+		</li>
+		<!--ChooseMultiple-->
+		
+		<li>
+			<select ng-model="selectedMeat" ng-options="x for x in meat">
+			</select>
+		</li>
+		<li>
+			<select ng-model="selectedVeggies" ng-options="x for x in veggies">
+			</select>
+		</li>
 		</ul>
 	</div>
+	<!--multiple--><!--ng-dropdown-multiselect-->
+	<!--HERE ENDS THE ANGULARJS PART-->
+	<!--here lies the pizza circle-->
 	<div id="circle"></div>
 	<div id="footer">
 		<div>
@@ -88,14 +95,18 @@
 	<script>
 	var app = angular.module('myApp', []);
 	app.controller('myCtrl', function($scope){
-		$scope.myVar=1;
-		$scope.hoverIn = function(){
-			return $scope.myVar=0;
-		};
-		$scope.hoverOut = function(){
-			return $scope.myVar=1;
-		};
+		$scope.names = ["LARGE", "MEDUIM", "SMALL"];
+		$scope.selectedSize="LARGE";
+		$scope.sauce=["CLASSIC MARINARA","PREMIUM CRUSHED TOMATO","BARBEQUE"];
+		$scope.selectedSauce="CLASSIC MARINARA";
+		$scope.meat=["PEPPERONI","OPT2","OPT3"];
+		$scope.selectedMeat="PEPPERONI";
+		$scope.veggies=["ONIONS","TOMATOES","PEPPER"];
+		$scope.selectedVeggies="ONIONS";
 	});
+	//choose more than one option
+	//how to add ingrediants to pizza
+	//find plain pizza
 	</script>
 </body>
 </html>
